@@ -1,0 +1,11 @@
+project-folder/
+│
+├── index.html         # Main HTML file
+│
+├── css/
+│   └── style.css      # CSS styles
+│
+├── js/
+│   └── script.js      # JavaScript for frontend functionality
+│
+└── README.md          # Project documentation
