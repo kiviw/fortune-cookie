@@ -1,0 +1,101 @@
+/* Reset some default styles for consistent rendering */
+html, body, h1, .cookie-container, button, #share {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set background color and text color for dark mode */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Style the header */
+h1 {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+/* Style the cookie container */
+.cookie-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin: 20px auto;
+    position: relative;
+}
+
+/* Style the virtual cookie */
+.cookie {
+    width: 150px;
+    height: 150px;
+    background-color: #f3d184;
+    border: 2px solid #dab850;
+    border-radius: 50%;
+    position: relative;
+}
+
+/* Style the cookie crack effect */
+.crack {
+    width: 50px;
+    height: 150px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    clip-path: polygon(50% 0%, 53% 10%, 50% 20%, 53% 30%, 50% 40%, 53% 50%, 50% 60%, 53% 70%, 50% 80%, 53% 90%, 50% 100%);
+}
+
+/* Style the message inside the cookie */
+.message {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the "Crack Open" button */
+#crackButton {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#crackButton:hover {
+    background-color: #0056b3;
+}
+
+/* Style the share section */
+#share {
+    margin-top: 20px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+    .cookie-container {
+        height: 100px;
+    }
+
+    .cookie {
+        width: 100px;
+        height: 100px;
+    }
+
+    .message {
+        font-size: 12px;
+    }
+
+    #crackButton {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+                       }
+      
